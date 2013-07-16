@@ -1,5 +1,5 @@
-import init.st-ericsson.usb.rc
-import init.st-ericsson.device.rc
+import /system/etc/init.st-ericsson.usb.rc
+import /system/etc/init.st-ericsson.device.rc
 
 on init
     # setup the global environment

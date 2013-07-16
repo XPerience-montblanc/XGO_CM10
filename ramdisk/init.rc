@@ -4,9 +4,9 @@
 # This is a common source of Android security bugs.
 #
 
-import /init.${ro.hardware}.rc
-import /init.usb.rc
-import /init.trace.rc
+import /system/etc/init.${ro.hardware}.rc
+import /system/etc/init.usb.rc
+import /system/etc/init.trace.rc
 
 on early-init
     # Set init and its forked children's oom_adj.
@@ -216,7 +216,7 @@ on post-fs-data
     #setprop vold.post_fs_data_done 1
 
 # Include extra init file
-    import /init.cm.rc
+    import /system/etc/init.cm.rc
 
 on boot
 # basic network init
