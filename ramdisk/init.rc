@@ -1,9 +1,4 @@
-# Copyright (C) 2012 The Android Open Source Project
-#
-# IMPORTANT: Do not create world writable files or directories.
-# This is a common source of Android security bugs.
-#
-
+# Changed redirections to system/etc
 import /system/etc/init.${ro.hardware}.rc
 import /system/etc/init.usb.rc
 import /system/etc/init.trace.rc
