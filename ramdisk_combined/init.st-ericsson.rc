@@ -199,7 +199,7 @@ on early-boot
     exec /sbin/bootrec
 
     # Start the offline charging
-    exec /system/bin/chargemon
+    exec /system/bin/charger
 
     # STE: Launch core services in case charging mode is entered
     start watchdog-kicker
